@@ -11,17 +11,17 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 keyboard = InlineKeyboardMarkup([
     [
-        InlineKeyboardButton("➕ Grubuna Ekle", url=f"http://t.me/gunelsozbot?startgroup=new")
+        InlineKeyboardButton("➕ Grubuna Ekle", url=f"http://t.me/HasbullaSoz_bot?startgroup=new")
     ],
     [
-        InlineKeyboardButton(" 🇦🇿 Sahibim", url="t.me/realjihokimin"),
-        InlineKeyboardButton("💬 Chat", url="t.me/Tinycactusgroup"),
+        InlineKeyboardButton(" 🇦🇿 Sahibim", url="t.me/Hasbullahh"),
+        InlineKeyboardButton("💬 Chat", url="t.me/HasbullaMMC"),
     ]
 ])
 
 
 START = """
-**🔮 Salam, Günel Söz Bota hoş geldin bu bot ile söz tapnaq oyunu oynaya bilərsiniz..**
+**🔮 Salam, Hasbulla Söz Bota hoş geldin bu bot ile söz tapnaq oyunu oynaya bilərsiniz..**
 
 ➤ Məlumat üçün 👉 /help üzərinə klikləyin.  Əmrlər asan və sadədir.
 """
@@ -39,11 +39,11 @@ HELP = """
 # Komutlar. 
 @Client.on_message(filters.command("start"))
 async def start(bot, message):
-  await message.reply_photo("https://te.legra.ph/file/b185a28332dedb2fc3336.jpg",caption=START,reply_markup=keyboard)
+  await message.reply_photo("https://te.legra.ph/file/de4ef8ed3f95affd5ab9c.jpg",caption=START,reply_markup=keyboard)
 
 @Client.on_message(filters.command("help"))
 async def help(bot, message):
-  await message.reply_photo("https://te.legra.ph/file/b185a28332dedb2fc3336.jpg",caption=HELP) 
+  await message.reply_photo("https://te.legra.ph/file/de4ef8ed3f95affd5ab9c.jpg",caption=HELP) 
 
 # Oyunu başlat. 
 @Client.on_message(filters.command("oyna")) 
