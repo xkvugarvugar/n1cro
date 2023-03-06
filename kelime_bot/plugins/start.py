@@ -11,17 +11,17 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 keyboard = InlineKeyboardMarkup([
     [
-        InlineKeyboardButton("➕ Grubuna Ekle", url=f"http://t.me/HasbullaSoz_bot?startgroup=new")
+        InlineKeyboardButton("➕ Grubuna Ekle", url=f"http://t.me/N1Sozbot?startgroup=new")
     ],
     [
-        InlineKeyboardButton(" 🇦🇿 Sahibim", url="t.me/Hasbullahh"),
-        InlineKeyboardButton("💬 Chat", url="t.me/HasbullaMMC"),
+        InlineKeyboardButton(" 🇦🇿 Sahibim", url="t.me/RiyadAndMe"),
+        InlineKeyboardButton("💬 Chat", url="t.me/RiyaddBlogg"),
     ]
 ])
 
 
 START = """
-**🔮 Salam, Hasbulla Söz Bota hoş geldin bu bot ile söz tapnaq oyunu oynaya bilərsiniz..**
+**🔮 Salam, N¹ Söz Bota xoş geldin bu bot ile söz tapmaq oyunu oynaya bilərsiniz..**
 
 ➤ Məlumat üçün 👉 /help üzərinə klikləyin.  Əmrlər asan və sadədir.
 """
@@ -39,11 +39,11 @@ HELP = """
 # Komutlar. 
 @Client.on_message(filters.command("start"))
 async def start(bot, message):
-  await message.reply_photo("https://te.legra.ph/file/de4ef8ed3f95affd5ab9c.jpg",caption=START,reply_markup=keyboard)
+  await message.reply_photo("https://images.app.goo.gl/qVXz1z2Xzaz7Lx6WA",caption=START,reply_markup=keyboard)
 
 @Client.on_message(filters.command("help"))
 async def help(bot, message):
-  await message.reply_photo("https://te.legra.ph/file/de4ef8ed3f95affd5ab9c.jpg",caption=HELP) 
+  await message.reply_photo("https://images.app.goo.gl/qVXz1z2Xzaz7Lx6WA",caption=HELP) 
 
 # Oyunu başlat. 
 @Client.on_message(filters.command("oyna")) 
@@ -75,7 +75,7 @@ async def kelimeoyun(c:Client, m:Message):
             kelime_list+= harf + " "
         
         text = f"""
-🎯 Raund : {oyun[m.chat.id]['round']}/100 
+🎯 Raund : {oyun[m.chat.id]['round']}/50 
 📝 Söz :   <code>{kelime_list}</code>
 💰 Qazandığın Xal: 50
 🔎 İpucu: 1. {oyun[m.chat.id]["kelime"][0]}
