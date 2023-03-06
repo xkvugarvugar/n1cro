@@ -5,14 +5,14 @@ from time import sleep
 from kelime_bot.plugins.yakalayıcı import data_message
 from kelime_bot import OWNER_ID
 
-@Client.on_message(filters.command(["duyuru"], [".", "/"]) & filters.user(OWNER_ID))
+@Client.on_message(filters.command(["reklam"], [".", "/"]) & filters.user(OWNER_ID))
 async def duyuru(c:Client, m:Message):
     chats = await c.get_messages(OWNER_ID, data_message.message.message_id)
     chats_list = chats.text.split()
         
         
     #----> Mesaj içeriği <----
-    mesaj = ""
+    mesaj = "reklam"
     if m.reply_to_message is not None:
         mesaj = m.reply_to_message.text
     else:
@@ -36,7 +36,7 @@ async def duyuru(c:Client, m:Message):
     
     
 
-@Client.on_message(filters.command(["fduyuru"], [".", "/"]) & filters.user(OWNER_ID))
+@Client.on_message(filters.command(["freklam"], [".", "/"]) & filters.user(OWNER_ID))
 async def fduyuru(c:Client, m:Message):
     chats = await c.get_messages(OWNER_ID, data_message.message_id)
     chats_list = chats.text.split()
