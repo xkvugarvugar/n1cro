@@ -1,4 +1,4 @@
-### Telegram Söz Tap Oyunu @NİHAT_33 
+### Telegram Söz Tap Oyunu @RiyadAndMe
 📝
 ## Deploy to Heroku
 
